@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    background-image: url('front.jpg');
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 1);
+
+}
+
+h1{
+    color: #fff;
+    margin: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 150px;
+    letter-spacing: 10px;
+    opacity: 0.5;
+}
+footer{
+	padding: 40px;
+	height: 300px;
+	width: 100%;
+	top: -130px;
+	background-color: #05182e;
+	color: white;
+  }
+  
+  #FooterHeader1{
+	font-size: 18px;
+  }
+  
+  
+  .size{
+	font-size: 11px;
+	text-align: center;
+  }
+
+.logo{
+    background-color: #05182e;
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+    padding-bottom:25px;
+    height: 60px;
+    width: 270px;
+    display: inline - block;
+    color:#e6a018;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    position: absolute;
+    top: 0;
+}
+
+#text{
+    font-size: 40px
+}
+
+ul{
+   list-style-type: none;
+   text-align: center;
+   margin: 60px;
+   padding-top:25px;
+}
+
+li{
+   display: inline;
+   padding: 2px;
+   padding-left: 60px;
+}
+
+li a:hover{
+   color: #e6a018;
+}
+
+.nav{
+   background-color: #05182e;
+   height: 70px;
+   width: 100%;
+}
+
+.nav a{
+   text-decoration: none;
+   color: white;
+   font-family: Arial, Helvetica, sans-serif;
+}
+ul a:hover{
+  color: #e6a018;
+}
+.svg{
+  text-align: center;
+}
+#rectangle0:hover {
+  opacity: 0.5;
+}
+#group1:hover {
+  opacity: 0.5;
+}
+#group2:hover {
+  opacity: 0.5;
+}
+#group3:hover {
+  opacity: 0.5;
+}
+#group4:hover {
+  opacity: 0.5;
+}
+#group5:hover {
+  opacity: 0.5;
+}
+#group6:hover {
+  opacity: 0.5;
+}
+h2 { 
+  font-size: 18px; margin:0;
+  text-align: center; 
+}
