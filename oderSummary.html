@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="orderSummary_css.css">
+    <script>
+
+        // function to set the values of the input field to display in the buy products webpage 
+
+        function passvalues(){
+            var Address1 = document.getElementById("txt").value;
+            localStorage.setItem("textValue",Address1);
+            return false;
+        }
+
+        function passvalues1(){    
+            var postalCode = document.getElementById("ftf").value;
+            localStorage.setItem("textoo",postalCode);
+            return false;
+        }
+
+        function passvalues2(){
+            var Town = document.getElementById("jjj").value;
+            localStorage.setItem("textiii",Town);
+            return false;
+        }    
+
+        function passvalues3(){
+            var Email = document.getElementById("kkk").value;
+            localStorage.setItem("textccc",Email);
+            return false;
+        }
+
+        function passvalues4(){
+            var country = document.getElementById("hho").value;
+            localStorage.setItem("textbb",country);
+            return false;
+        }
+
+
+        function passvalues5(){
+            var Name = document.getElementById("hhw").value;
+            localStorage.setItem("textuu",Name);
+            return false;
+        }
+
+        // Validation for the contact details and billing details before proceeding
+         
+        function checkforblank(){
+            if(document.getElementById('hhw').value == ""){
+                alert('please enter  your name');
+                document.getElementById('hhw').style.bordercolor = red;
+                return false;
+            }
+            if(document.getElementById('txt').value == ""){
+                alert('please enter  your address');
+                return false;
+            }
+            if(document.getElementById('numw').value == ""){
+                alert('please enter  your address2');
+                return false;
+            }
+            if(document.getElementById('jjj').value == ""){
+                alert('please enter  your Town/City');
+                return false;
+            }
+            if(document.getElementById('Address3').value == ""){
+                alert('please enter  your address3');
+                return false;
+            }
+            if(document.getElementById('hho').value == ""){
+                alert('please enter  your ');
+                return false;
+            }
+            if(document.getElementById('State').value == ""){
+                alert('please enter  your state/region');
+                return false;
+            }
+            if(document.getElementById('ftf').value == ""){
+                alert('please enter  your state/region');
+                return false;
+            }
+            if(document.getElementById('num').value == ""){
+                alert('please enter  your phone number');
+                return false;
+            }
+            if(document.getElementById('kkk').value == ""){
+                alert('please enter  your Email');
+                return false;
+            }
+        }
+    
+    </script>
+</head>
+<body>
+
+    <!-- Logo -->
+    <div class="logo">
+        <p id="text">Travel SriLanka</p>
+    </div>
+
+
+    <!-- Navigation Bar -->
+   <div class="nav"> 
+   <ul>
+    <li><a href="">Home</a></li>
+    <li><a href="">Buy Products</a></li>
+    <li><a href="">Query Form</a></li>
+    <li><a href="">Quiz</a></li>
+    <li><a href="">Student Details</a></li>
+    <li><a href="">Sitemap</a></li>
+    <li><a href="">Gallery</a></li>
+
+    </ul>
+    </div>
+
+    <img src="wallpaper.jpg" width="100%" height="650"  alt="sri lanka">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <h3 class="shop">Welcome to Our Online Tourist Shop that Gives you a Taste of Sri Lanka!</h3>
+
+    <br>
+
+    
+    
+    <div class="main">
+   <form action="buy_products.html" id="frm" method="post" onsubmit="checkforblank()">
+    
+    <!-- Input field for billing address details to be passed-->
+
+    <br>
+    <h3 id="billing">Billing Address Details</h3>
+    <br>
+    
+    
+    <label>Name :</label>
+    <input type="text" id="hhw"/>
+
+    <br>
+    <br>
+    <br>
+
+    <label>Address1 :</label>
+    <input type="text" id="txt"/>
+    
+    <br>
+    <br>
+    <br>
+
+    <label id="numw">Address2 :</label>
+    <input type="text" id="numw"/>
+    
+    <br>
+    <br>
+    <br>
+
+    <label>Town/City :</label>
+        <input type="text" id="jjj"/>
+        
+        
+    <br>
+    <br>
+    <br>
+    <label id="Address3">Address3 :</label>
+    <input type="text" id="Address3"/>
+    <br>
+    <br>
+    <br>
+
+    <label>Country</label>
+    <input type="text" id="hho"/>
+    
+
+
+    <br>
+    <br>
+    <br>
+
+    <label id="State">State/Region :</label>
+    <input  type="text" id="State"/>
+
+    <br>
+    <br>
+    <label id="postal">Postal Code :</label>
+    <input type="text" id="ftf"/>
+
+    <div class="maas">
+
+        <!-- Input field for contact details to be passed  -->
+
+        <h3 id="contact">Contact Details </h3>
+        <label id="num">Phone Number</label>
+        <input  type="text" id="num"/>
+        
+        <br>
+        <br>
+
+            <br>
+            <label>Email Address :</label>
+            <input type="text" id="kkk"/><br><br>
+            <input type="submit" value="Confirm" onclick="passvalues3();passvalues1();passvalues4();passvalues2();passvalues();passvalues5()"/>
+        </div>
+        
+    </form>
+
+        <a id ="cancel" href="buy_products.html">Cancel</a>
+        <br>
+        <p id="note">Note: Please fill all information above to complete checkout</p>
+    
+        
+
+    </div>
+
+        
+    
+        <br>
+        <br>
+
+        <!-- Footer -->
+        <footer class="footer_main">
+            <h2>_____________Travel Sri Lanka_____________</h2>
+            <h2 class="footerHeader">The Page Developer</h2><br>
+            <a href = "sharon silva.html">&#128073; Sharon Silva</a><br><br>
+            <a href="mailto:hege@example.com">_Our Email_&#128073; travelsrilanka@gmail.com</a>
+            <br><br><br><br>
+            <p class="size">&#128222;contact us:- +91 78276 67667_______&#128231;Our Email:- travelsrilanka@gmail.com _______&#128077;Follow us on instagram :-travelsrilanka_______
+            &#128077;Like Us on Facebook :- travelsrilanka _______&#128077;Twitter us ;- @travelsrilanka_______ &#169;All rights reserved</p>
+     </footer>
+       
+        </body>
+        </html>

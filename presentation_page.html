@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="presentation_page.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+
+
+    <!-- Splash Screen to be redirected to the main page -->
+    <script>
+        var seconds = 0;
+        function displaySeconds(){
+            seconds += 1;
+            document.getElementById("secondsDisplay").innerText = "";
+        }
+
+        setInterval(displaySeconds,2000);
+        function redirectpage(){
+            window.location = "home.html";
+        }
+
+        setTimeout('redirectpage()',4000);
+
+
+        </script>
+</head>
+<body>
+
+    <div id="secondsDisplay"></div>
+
+
+    <!-- Nav Bar -->
+
+    <section>
+   <div class="nav"> 
+   <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="buy_products.html">Buy Products</a></li>
+    <li><a href="q.html">Query Form</a></li>
+    <li><a href="aboutus.html">Student Details</a></li>
+    <li><a href="sitemap.html">Sitemap</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+
+    </ul>
+    </div>
+
+    <!-- Content -->
+
+    <div class="container">
+        <div class="outer">
+            <div class="details">
+                <h1>Welcome to Sri Lanka!</h1>
+                <h2><span>An Island Escape Awaits You...</span></h2>
+                </div>
+                </div>
+                </div>
+                </section>
+
+    <!-- Footer - DETAILS OF GROUP MEMBERS -->
+    
+    <footer class="footer">
+        <br>
+        <br>
+        <br>
+        <table>
+            <tr>
+                <td id="pp">About Sri Lanka</td>
+                <td id="cc">Development Team</td>
+                <td id="gg">Get Help</td>
+            </tr>
+
+            <tr>
+            <td>Festivals</td>
+            <td>Himath Malwaththe</td>
+            <td>Order Status</td>
+            </tr>
+
+            <tr>
+            <td>Culture</td>
+            <td>Ravindu Aththanayaka</td>
+            <td>FAQ</td>
+            </tr>
+
+            <tr>
+            <td>Heritage</td>
+            <td>Aaron Rajakulasekaram</td>
+            <td>FAQ</td>
+            </tr>
+
+            <tr>
+            <td>Events</td>
+            <td>Sharon silva</td>
+            <td>FAQ</td>
+            </tr>    
+
+        </table>
+    </footer>
+
+    </body>
+</html>

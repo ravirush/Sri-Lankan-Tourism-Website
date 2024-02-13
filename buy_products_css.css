@@ -1,0 +1,351 @@
+*{
+    box-sizing: border-box;
+}
+
+/* Body style */
+body{
+    background-color: #e9dfce;
+}
+
+/* Navigation Bar */
+
+.logo{
+     background-color: #05182e;
+     padding-left: 10px;
+     padding-top: 1px;
+     padding-right: 10px;
+     padding-bottom:15px;
+     height: 70px;
+     width: 270px;
+     display: inline - block;
+     color:#e6a018; 
+     font-family: Arial, Helvetica, sans-serif; 
+     text-align: center; 
+     font-weight: bold; 
+     font-size: 40px;
+     position: absolute;
+     top: 0;
+}
+
+
+ul{
+    list-style-type: none;
+    text-align: center;
+    margin: 60px;
+    padding-top:25px;
+    
+}
+
+li{
+    display: inline;
+    padding: 10px;
+    padding-left: 80px;
+    
+    
+}
+
+li a:hover{
+    color: #e6a018;
+}
+
+.nav{
+    background-color: #05182e;
+    height: 70px;
+    width: 100%;
+}
+
+.nav a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif; 
+}
+
+
+/* Intro text */
+.shop{
+    font-family:"Arial Rounded MT Bold", Arial, Helvetica, sans-serif;
+    font-size: 36px;
+    width: 90%;
+    font-weight: bold;
+    text-align: center;
+    color: #05182e;
+}
+
+/* product display section */
+
+.product-container {
+    left: 20px;
+    margin-top: 100px;
+	width: 100%;
+	display: inline-flex;
+	grid-template-columns: 300px 300px 300px 300px;
+	justify-content: space-evenly;
+} 
+
+.box {
+	width: 250px;
+	height: 350px;
+	position: relative;
+	background-color: #f0f0f0;
+	padding-bottom: 40px;	
+}
+
+.box img {
+	margin: 10px;
+	width: 230px;
+	height: auto;
+}
+.product-content {
+	text-align: center;
+}
+.product-content span {
+	display: block;
+	margin-bottom: 20px;
+}
+.addCart-btn {
+	width: 250px;
+	padding: 12px 20px;
+	border: none;
+	background-color: #05182e;
+	color: #ffffff;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.addCart-btn:hover {
+	background-color:#e6a018;
+	color: #ffffff;
+	border:solid ;
+	transition: 0.4s;
+}
+
+
+/* Cart Display */
+
+
+#cart table {
+	margin-left: auto;
+  	margin-right: auto;
+	width: 90%;
+	border-collapse: collapse;
+	margin-top: 100px;
+}
+
+#cart table img {
+	width: 60px;
+	height: 60px;
+}
+
+#cart table thead {
+	text-align: left;
+	border: 1px solid black;
+	border-left: none;
+	border-right: none;
+	padding: 20px;
+}
+
+#cart table thead td {
+	padding: 15px;
+	font-weight: 700;
+}
+
+#cart table tbody td {
+	padding: 15px;
+	text-align: left;
+}
+
+.quantity {
+	width: 40px;
+	text-align: center;
+}
+
+.remove-btn {
+	font-size: 15px;
+	background-color: transparent;
+	border: none;
+	text-decoration: none;
+	color:#05182e;
+}
+
+.remove-btn:hover {
+	color:#e6a018;
+}
+
+/* Total Amount Display */
+
+#bill table {
+	text-align: center;
+	margin-left: auto;
+  	margin-right: auto;
+	width: 20%;
+	margin-top: 100px;
+	padding: 20px;
+	color: #171427;
+	font-size: 24px;
+}
+
+#bill a {
+	border-radius: 15px;
+	display: block;
+	margin-left: auto;
+  	margin-right: auto;
+	width: 20%;
+	background-color: #05182e;
+	margin-top: 20px;
+	color: #f9f9f9;
+	padding: 20px;
+	cursor: pointer;
+	font-size: large;
+	border: none;
+	text-decoration: none;
+	text-align: center;
+}
+
+#bill a:hover {
+	background-color:#e6a018;
+	border: none;
+	transition: 0.4s;
+}
+
+/* Payment details validation CSS */
+
+.input-group span{
+position: relative;
+font-size:14px;
+color: red;
+}
+
+.input-group span i{
+	color: seagreen;
+}
+
+/* edit button css for both billing and contact details */
+
+#edit1{
+	float: right;
+	margin-right: 180px;
+    color: black;
+    background-color: #e6a018;
+    border: none;
+    padding-left: -100px ;
+	padding-right: 50px ;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+/* payment section design */
+
+.Pay{
+	color: white;
+	background-color:#05182e;
+	margin-left: 270px;
+	height: 650px;
+	text-indent: 60px;
+	border-radius: 25px;
+	width: 900px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+
+#cnummm{
+	padding: 17px;
+}
+
+#evv{
+	padding: 25px;
+}
+
+#secu{
+	padding: 16px;
+}
+
+#result{
+	padding-left: 55px;
+	padding-right: 0px;
+}
+
+#emailk{
+	padding-left: 55px;
+	padding-right: 0px;
+}
+
+/* checkout heading design */
+
+#checkout{
+	margin-left: 300px;
+	color: #e6a018;
+	font-size: 40px;
+}
+
+/* order summary section design */
+
+.OrderSummary{
+	color: white;
+	background-color:#05182e;
+	margin-left: 270px;
+	height: 250px;
+	text-indent: 60px;
+	border-radius: 25px;
+	width: 900px;
+	color: #f9f9f9;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#r{
+	padding-left: 5px;
+	padding-right: 0px;
+}
+
+#ii{
+	margin-left:50px ;
+    padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+	cursor: pointer;
+	margin-right: 45px;
+	float: right;
+}
+
+#ii:hover,#iy:hover{
+	color:#e6a018;
+    transition: 0.4s;
+ } 
+
+ #iy{
+	padding: 15px;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+	cursor: pointer;
+	margin-left: 45px;
+	float: left;
+ }
+
+ /* footer */
+
+
+ footer{
+	padding: 5px;
+	height: 300px;
+	width: 100%;
+	background-color: #05182e;
+	color: white;
+  }
+  
+  .footer_main{
+	text-align: center;
+  }
+  
+  .footerHeader{
+	font-size: 18px;
+  }
+  
+  .size{
+	font-size: 11px;
+	text-align: center;
+  }
+  

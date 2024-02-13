@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  
+    <link rel="stylesheet" href="buy_products_css.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+    <!-- logo -->
+    <div class="logo">
+        <p id="text">Travel SriLanka</p>
+    </div>
+
+    <!-- Nav Bar -->
+
+   <div class="nav"> 
+   <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="buy_products.html">Buy Products</a></li>
+    <li><a href="q.html">Query Form</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="aboutus.html">Student Details</a></li>
+    <li><a href="sitemap.html">Sitemap</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>
+
+    </ul>
+    </div>
+
+    <!-- Backround Image -->
+
+    <img src="wallpaper.jpg" width="100%" height="650"  alt="sri lanka">
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+    <h3 class="shop">Welcome to Our Online Tourist Shop that Gives you a Taste of Sri Lanka!</h3>
+
+    <br>
+    
+
+    <!-- Shop -->
+
+    
+        <div class="product-container">
+    
+            <div class="box">
+                <img src="dilma.jpg" alt="product1" class="product-image">
+                <div class="product-content">
+                    <h2 class="product-name">Dilma Tea</h2>
+                    <span class="price">LKR700.00</span>
+                    <button type="button" class="addCart-btn">ADD TO CART</button>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="pot set.jpg" alt="product2" class="product-image">
+                <div class="product-content">
+                    <h2 class="product-name">Pot Set</h2>
+                    <span class="price">LKR1000.00</span>
+                    <button type="button" class="addCart-btn">ADD TO CART</button>
+                </div>
+            </div>
+        
+            <div class="box">
+                <img src="mask3.jpg" alt="product3" class="product-image">
+                <div class="product-content">
+                    <h2 class="product-name">Traditional Mask</h2>
+                    <span class="price">LKR900.00</span>
+                    <button type="button" class="addCart-btn">ADD TO CART</button>
+                </div>
+            </div>   
+                </div>   
+    
+
+
+                <!-- Cart -->
+        <div id="cart">
+            <table>
+    
+                <thead>
+                    <tr>
+                        <td id="checkCart">Item</td>
+                        <td></td>
+                        <td>Price</td>
+                        <td>Quantity</td>
+                        <td>Subtotal</td>
+                        <td></td>
+                    </tr>
+                </thead>
+    
+                <tbody class="table-body">
+                </tbody>  
+    
+            </table>
+        </div>
+
+    
+    <!-- Total Bill -->
+        <div id="bill">
+            <table>
+                <tr>
+                    <th>TOTAL</th>
+                    <td class="total-bill">LKR0</td>
+                </tr>
+            </table>
+    
+            
+            <a href="">CLEAR ORDER</a>
+            <a href="#checkout" class="hh">PROCEED TO PAY</a>
+            <br><br>
+
+        </div>
+
+
+
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <!-- Order Summary -->
+
+    <div class="OrderSummary">
+        <h1 id="checkout">Checkout</h1>
+            <h3>Order Summary</h3>
+            <p>Name:<span id="r"></span></p>
+            <p id="description">Description: Make payment</p>
+            <p id="amount"></p>
+        </div>
+
+    <br>
+
+
+
+    <div class="Pay">
+        <!-- Billing address Details -->
+        <br>
+        <br>
+
+        <h3>Billing Address</h3>
+        <a href="oderSummary.html" id="edit1">Edit</a>
+        <br>
+        <span id="result"></span>
+        <span id="resu"></span>
+        <span id="res"></span>
+        <span id="re"></span>
+
+        <!-- Contact Details -->
+
+        <h3>Contact Details</h3>
+        <a href="oderSummary.html" id="edit1">Edit</a>
+        <br>
+        <span id="emailk"></span>
+
+        
+        <br>
+        <br>
+
+        <!-- Payment -->
+
+        <h3>Payment Details</h3>   
+            <form>
+            <div class="input-group">
+            <label> Card Holder Name:  </label>
+            <input type="text" placeholder="Ex:Sharon silva" id="num"  onkeyup="validateName()">
+            <span id="Cname-error">Name is Required</span>
+            </div>
+
+            <br><br>
+
+            <div class="input-group">
+            <label id="cnummm">Card Number    : </label>
+            <input type="tel" placeholder="1234567890453456" id="Cardnumb" onkeyup="validateNumber()">
+            <span id="cardnum-error">CardNum is Required</span>
+            </div>
+
+            <br><br>
+
+            <div class="input-group">
+                <label id="evv" for="bdaymonth">Expiry Date:</label>
+                <input type="month" id="bdaymonth" name="bdaymonth">
+            </div>
+
+            <br><br>
+            
+            <div class="input-group">
+            <label id="secu"> Security Code: </label>
+            <input type="tel" placeholder="..." id="CVV" onkeyup="validateCVV()">
+            <span id="Sec_code_error">CVV Required</span>
+            </div>
+            <br>
+            <br>
+            <br>
+            <button id="ii">Cancel</button>
+            <button id="iy">Make Payment</button>
+            <br><br>
+            
+        </form>
+
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+    </div>
+
+    <br>
+    <br>
+    <br>
+
+
+    
+    <!-- Footer -->
+    <footer class="footer_main">
+        <h2>_____________Travel Sri Lanka_____________</h2>
+        <h2 class="footerHeader">The Page Developer</h2><br>
+        <a href = "sharon silva.html">&#128073; Sharon Silva</a><br><br>
+        <a href="mailto:hege@example.com">_Our Email_&#128073; travelsrilanka@gmail.com</a>
+        <br><br><br><br>
+        <p class="size">&#128222;contact us:- +91 78276 67667_______&#128231;Our Email:- travelsrilanka@gmail.com _______&#128077;Follow us on instagram :-travelsrilanka_______
+        &#128077;Like Us on Facebook :- travelsrilanka _______&#128077;Twitter us ;- @travelsrilanka_______ &#169;All rights reserved</p>
+ </footer>
+
+    <script src = 'products.js'></script>
+</body>
+</html>

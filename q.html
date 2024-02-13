@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Query Form </title>
+  
+    <link rel="stylesheet" href="Home.css">
+    <link rel="stylesheet" href="home2.css">
+    <link rel="stylesheet" href="Q.css">
+    <script src="Q.js"></script>
+
+    
+    <style>
+* {
+  box-sizing: border-box;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+  padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+    
+    
+
+
+    
+    
+}
+</style>
+</head>
+<body>
+    
+    
+    <div class="logo">
+        <p id="text">Travel <br> Sri Lanka</p>
+    </div>
+
+   <div class="nav"> 
+   <ul>
+    <li><a href="Home.html">Home</a></li>
+    <li><a href="buy_products.html">Buy Products</a></li>
+    <li><a href="q.html">Query Form</a></li>
+    <li><a href="quiz.html">Quiz</a></li>
+    <li><a href="sitemap.html">Sitemap</a></li>
+    <li><a href="Gallery.html">Gallery</a></li>    
+    <li><a href="aboutus.html">Student Details</a></li>
+
+    </ul>
+    </div>
+    
+    <!-- Query Form-->
+    <div class="display-query" id="display-query">
+    <div class="whole-form" id="wholeform">
+        <Form id="form" name="formQuery" action="mailto:himath.20220663@iit.ac.lk" method="post"  enctype="text/plain" class="form-contain">
+            <div class="form-main" id="queryForm">
+
+            <div class="row">
+                <div class="col-25">
+                <label for="fullname"><b> Full Name </b></label><br>
+                </div>
+                <div class="col-75">
+                <input type="text" name="fullname" id="fullname" placeholder="Enter your fullname"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="email"><b>Email</b></label><br>
+                </div>
+                <div class="col-75">
+                <input type="email" name="email" id="email" placeholder="Enter your email address"><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="subject"><b> How Satisfied our website today? </b></label><br>
+                </div>
+                <div class="col-75">
+                <select name="subject" id="subject">
+                    <option value="" label="null"></option>
+                    <option value="Not Satisfied">&#128545;Not Satisfied.</option>
+                    <option value="Slightly Satisfied">&#128529;Slightly Satisfied</option>
+                    <option value="Satisfied">&#128522;Satisfied</option>
+                    <option value="Very Satisfied">&#128515;Very Satisfied.</option>
+                    <option value="Extremely Satisfied">&#128519;Extremely Satisfied.</option>
+                </select><br>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-25">
+                <label for="query"><b>Type your message</b></label><br>
+                </div>
+                <div class="col-75">
+                <textarea name=" query " id="query" rows="3" cols="20"
+                          placeholder="Enter your Query details:"></textarea><br><br>
+                </div>
+            </div>
+                <input type="button" value="Confirm" name="check-btn" id="check-btn" onclick="checkbtn()">
+                <input type="button" value="View Query" name="view-btn" id="view-btn" onclick="validateform()">
+            </div>
+          
+
+            <div class="right-text" id="display-text">
+                <h3 class="q-head">QUERY</h3>
+                <span id="names"></span><br>
+                <span id="emails"></span><br>
+                <span id="subjects"></span><br>
+                <span id="querys"></span>
+
+                <input type="submit" value="Send" name="send-btn" id="send-btn">
+                <input type="button" value="Edit" name="check-btn" id="edit-btn" onclick="editbtn()">
+            </div>
+        </Form>
+    </div>
+</div>
+<br><br><br><br><br><br><br><br><br>
+    
+    
+   
+
+           <footer class="footer_main">
+          <h2>_________________Travel Sri Lanka_____________</h2>
+       <h2 class="footerHeader">The Page Developer</h2><br>
+       <a href = "Himath%20Malwaththa.html">&#128073;Himath Malwaththa</a><br><br><br><br>
+       <a href="mailto:hege@example.com">__Our Email__ :- travelsrilanka@gmail.com<br><br><br><br><br>
+
+     <p class="size">&#128222;contact us:- +91 78276 67667_______&#128231;Our Email:- travelsrilanka@gmail.com _______&#128077;Follow us on instergram :-travelsrilanka_______
+            &#128077;Like Us on Facebook :- travelsrilanka _______&#128077;Twitter us ;- @travelsrilanka_______ &#169;All rights reserved</p> 
+               </a>
+            
+  </footer>
+    
+    </body>
+</html>
+    
+    
+    
+    

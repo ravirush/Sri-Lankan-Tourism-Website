@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Travel Website</title>
+	<link rel="stylesheet" type="text/css" href="CSS/style.css">
+	<meta charset="UTF-8">
+    <style id="style"></style>
+	<script src="JS/Gallery.js"></script>
+</head>
+<body>
+	<video autoplay loop muted class="back-video">
+		<source src="img/v1.mp4" type="video/mp4">
+	</video>
+	<div class="logo">
+        <p id="text">Travel<br>Sri Lanka</p>
+	</div>
+    <div class="nav">
+        <ul>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="buy_products.html">Buy Products</a></li>
+            <li><a href="q.html">Query Form</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+            <li><a href="sitemap.html">Sitemap</a></li>
+			<li><a href="Gallery.html">Gallery</a></li>
+            <li><a href="aboutus.html">Student Details</a></li>
+        </ul>
+    </div>
+	<h2><button onclick="changeColorScheme()">Change Color Scheme</button><button onclick="increaseFontSize()">Increase Font Size</button><button onclick="decreaseFontSize()">Decrease Font Size</button></h2>
+	<br>
+	<div class="body">
+		<div class="heading">
+			<h1>Travel With Us</h1>
+			<br>
+			<p>“Travel isn’t always pretty. It isn’t always comfortable. Sometimes it hurts,
+				it even breaks your heart. But that’s okay.The journey changes you; it should change you.
+				It leaves marks on your memory, on your consciousness, on your heart, and on your body.
+				You take something with you. Hopefully, you leave something good behind.” </p>
+		</div>
+		<div class="tours">
+			<div class="places">
+			  <h2>Batticaloa</h2>
+			  <a href="#" onclick="showInfo('Batticaloa', 'img/bati.jpg', 'The city of Batticaloa, which is situated on the islands eastern coast, is one of the islands more multicultural communities and serves as a museum for the nations colonial past. Batticaloa is a quaint coastal town with a lot to offer, from the Portuguese to the British, to the numerous places of worship and breathtaking beaches.')">
+				<img src="img/bati.jpg" alt="Batticaloa" style="width: 300px; height: 250px; border-radius: 12px;">
+			  </a>
+			</div>
+			<div class="places">
+			  <h2>Galle</h2>
+			  <a href="#" onclick="showInfo('Galle', 'img/galle.jpg', 'Galle, which is perched on Sri Lankas southwest coast, proudly displays its past. The citys 16th-century Portuguese-built fort, which serves as its colonial era centerpiece, is surrounded by windswept beaches, nodding palms, and Dutch-style homes, eccentric shops, whitewashed villas, and history museums.')">
+				<img src="img/galle.jpg" alt="Galle" style="width: 300px; height: 250px; border-radius: 12px;">
+			  </a>
+			</div>
+			<div class="places">
+			  <h2>Nuwara Eliya</h2>
+			  <a href="#" onclick="showInfo('Nuwara Eliya', 'img/nw.jpg', 'The former hill station of Nuriwaya Eliya, known as Little England, because of its temperate environment and colonial-era bungalows, is surrounded by terraced tea plantations and mountains shrouded in mist, while world-class brews are plentiful.')">
+				<img src="img/nw.jpg" alt="Nuwara Eliya" style="width: 300px; height: 250px; border-radius: 12px;">
+			  </a>
+			</div>
+		</div>
+	</div>
+	
+	<footer>
+		<br>
+        <h2>_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _Travel Sri Lanka_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _</h2>
+        <h2>The Page Developer</h2><br>
+        <a href="EditorsPage.html"><h2>&#128073;Aaron Rajakulasekaram </h2></a><br>
+        <a href="mailto:hege@example.com"><h2>_Our Email_&#128073; travelsrilanka@gmail.com</h2></a>
+        <br><br><br><br>
+        <p class="size">&#128222;contact us:- +91 78276 67667_______&#128231;Our Email:- travelsrilanka@gmail.com _______&#128077;Follow us on instagram :-travelsrilanka_______
+        &#128077;Like Us on Facebook :- travelsrilanka _______&#128077;Twitter us ;- @travelsrilanka_______ &#169;All rights reserved</p>
+    </footer>
+</body>
+</html>

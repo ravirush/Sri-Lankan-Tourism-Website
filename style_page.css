@@ -1,0 +1,66 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('images/background.jpg');
+}
+    
+
+.page_main{
+    min-height: 900px;
+    font-family: sans-serif;  
+}
+
+
+h2{
+    color: white;
+    text-align: center;
+}
+
+.area{
+    margin-top: 33%;
+}
+         
+/* Create four equal columns that floats next to each other */
+.row1 .column{
+    float: left;
+    width: 25%;
+    height: 400px;    
+    padding: 10px;
+}
+
+.row1 a{
+    text-decoration: none;
+}
+
+.row1 a:link{
+    color: white;
+}
+
+.row1 a:visited{
+    color: white;
+}
+
+.row1 a:hover{
+    color: #e6a018;
+    text-decoration: underline;
+}
+
+.row1 a:active{
+    color: black;
+}
+
+.row2 .column{
+    float: left;
+    width: 25%;
+    height: 250px;
+    padding: 10px;
+}
+      
+/* Clear floats after the columns */
+.row1 .row2 :after{
+    content: "";
+    display: table;
+    clear: both;
+}
